@@ -1,0 +1,10 @@
+project_id = "socketobit"
+
+[functions.create-member]
+verify_jwt = true
+
+[functions.update-member]
+verify_jwt = true
+
+[functions.delete-member]
+verify_jwt = true

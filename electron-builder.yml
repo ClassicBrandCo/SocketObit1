@@ -1,0 +1,19 @@
+appId: com.socketobit.desktop
+productName: SocketObit
+directories:
+  output: dist/electron
+files:
+  - src/main/**
+  - src/preload/**
+  - dist/renderer/**
+  - package.json
+extraResources:
+  - from: src/main/config.json
+    to: config.json
+win:
+  target:
+    - nsis
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
