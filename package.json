@@ -1,0 +1,31 @@
+{
+  "name": "socketobit",
+  "version": "0.4.0",
+  "description": "SocketObit desktop client",
+  "author": "Devin",
+  "private": true,
+  "main": "src/main/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint src --ext .js,.jsx",
+    "build": "vite build && electron-builder --dir",
+    "package": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.53.0",
+    "electron-store": "^10.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ws": "^8.18.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^32.2.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "^9.9.1",
+    "vite": "^5.4.10"
+  }
+}

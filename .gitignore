@@ -1,0 +1,12 @@
+node_modules/
+dist/
+out/
+.env
+*.log
+src/main/*.json
+!src/main/config.json
+src/main/profile-store.json
+src/main/proxy-store.json
+.DS_Store
+coverage/
+electron-builder-cache/
