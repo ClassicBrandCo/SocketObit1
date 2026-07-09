@@ -71,7 +71,7 @@ function createWindow() {
     height: 920,
     backgroundColor: "#0f1117",
     webPreferences: {
-      preload: path.join(__dirname, "../preload/dashboard-preload.js"),
+      preload: path.join(__dirname, "../preload/dashboard-preload.cjs"),
       contextIsolation: true,
       nodeIntegration: false,
     },
