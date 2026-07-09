@@ -3,13 +3,19 @@ productName: SocketObit
 directories:
   output: dist/electron
 files:
-  - src/main/**
-  - src/preload/**
-  - dist/renderer/**
+  - src/main/**/*
+  - src/preload/**/*
+  - dist/renderer/**/*
   - package.json
 extraResources:
   - from: src/main/config.json
     to: config.json
+asar: true
+asarUnpack:
+  - node_modules/electron-store/**/*
+  - node_modules/socks-proxy-agent/**/*
+  - node_modules/get-port/**/*
+  - src/main/deviceProfiles.json   # <-- unpack this file
 win:
   target:
     - nsis
