@@ -10,12 +10,13 @@ files:
 extraResources:
   - from: src/main/config.json
     to: config.json
+  - from: src/main/deviceProfiles.json
+    to: deviceProfiles.json
 asar: true
 asarUnpack:
   - node_modules/electron-store/**/*
   - node_modules/socks-proxy-agent/**/*
   - node_modules/get-port/**/*
-  - src/main/deviceProfiles.json   # <-- unpack this file
 win:
   target:
     - nsis
